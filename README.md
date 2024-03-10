@@ -28,7 +28,11 @@
 
 ## 运行
 
-#### 实机测试
+app-release.apk:  可直接安装的apk
+
+SCUT_CDD：Android Studio 源文件
+
+## 实机测试
 
 ![image-20240310160205767](assets/image-20240310160205767.png)
 
