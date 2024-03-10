@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.development.scut_cdd.View.StartView
+        android:id="@+id/startView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.development.scut_cdd.View.RegisterView
+        android:id="@+id/registerView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:visibility="gone"/>
+
+    <com.development.scut_cdd.View.BluetoothView
+        android:id="@+id/bluetoothView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.development.scut_cdd.View.ChatView
+        android:id="@+id/chatView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.development.scut_cdd.View.SettlementScoreView
+        android:id="@+id/settlementScoreView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.development.scut_cdd.View.InputIPView
+        android:id="@+id/inputIPView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

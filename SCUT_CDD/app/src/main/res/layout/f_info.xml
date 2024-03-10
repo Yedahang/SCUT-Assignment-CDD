@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="380dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.8"
+                android:background="@drawable/f_background_gradient"
+                />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/f_miwhite"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@id/view1"
+                android:layout_alignTop="@id/view1"
+                android:layout_alignBottom="@id/view1"
+                android:layout_alignLeft="@id/view1"
+                android:layout_alignRight="@id/view1" />
+
+            <TextView
+                android:id="@+id/tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/f_trapezoid_background"
+                android:text="个人信息"
+                android:gravity="center"
+                android:textColor="#D8860D"
+                android:layout_below="@id/view1"
+                android:layout_alignTop="@id/view1"
+                android:layout_alignLeft="@id/view1"
+                android:layout_marginLeft="134dp"/>
+
+            <ImageButton
+                android:id="@+id/mbtn_exit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/view1"
+                android:layout_alignTop="@id/view1"
+                android:layout_alignRight="@id/view1"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/f_exit" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/f_trapezoid_background"
+                android:text="Uid=10086"
+                android:gravity="center"
+                android:textColor="#D8860D"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignLeft="@id/view1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/iv_head_info"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignLeft="@id/view1"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="30dp"
+                android:onClick="changeAvatar"
+                android:src="@drawable/f_shockingpanda"
+                app:shapeAppearanceOverlay="@style/circleImageStyle" />
+            <TextView
+                android:id="@+id/tv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/f_trapezoid_background"
+                android:gravity="center"
+                android:textColor="#702411"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignLeft="@id/view1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:textSize="10sp"/>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/f_icon"
+                android:scaleType="fitCenter"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignLeft="@id/view1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="150dp"
+                />
+            <RadioGroup
+                android:id="@+id/rg_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignLeft="@id/view1"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="125dp"
+                >
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:text="男"
+                    android:checked="true"
+                    android:textColor="#319FD1"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="50dp"
+                    android:layout_height="20dp"
+                    android:checked="false"
+                    android:text="女"
+                    android:textColor="#F49AB9"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="1dp"
+                android:layout_height="245dp"
+                android:layout_marginLeft="165dp"
+                android:layout_marginRight="214dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignTop="@id/view1"
+                android:layout_alignBottom="@id/view1"
+                android:layout_alignLeft="@id/view1"
+                android:layout_alignRight="@id/view1" />
+
+            <TextView
+                android:id="@+id/tv_4"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignRight="@id/view2"
+                android:layout_marginRight="80dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/f_ellipse"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_6"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_below="@+id/tv_4"
+                android:layout_alignRight="@id/view2"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="112dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignRight="@id/view2"
+                android:layout_marginTop="102dp"
+                android:layout_marginRight="80dp"
+                android:background="@drawable/f_ellipse"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_7"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/view2"
+                android:layout_alignTop="@id/view2"
+                android:layout_alignRight="@id/view2"
+                android:layout_marginTop="142dp"
+                android:layout_marginRight="115dp"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="8sp" />
+        </RelativeLayout>
+    </FrameLayout>

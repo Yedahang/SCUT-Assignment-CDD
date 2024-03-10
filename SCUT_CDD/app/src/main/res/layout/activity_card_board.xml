@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/my_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f_cardboard_bg4"
+    tools:context=".CardBoardActivity">
+
+    <TextView
+        android:id="@+id/IpAddressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="主机IP地址:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:visibility="gone"/>
+    <ImageButton
+        android:id="@+id/setibt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/setting_button"
+        android:layout_alignParentRight="true"
+        />
+    <com.development.scut_cdd.F_class.f_SettingView
+        android:id="@+id/f_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+
+<!--    <EditText-->
+<!--        android:id="@+id/idedit"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignBottom="@+id/serverbtn"-->
+<!--        android:layout_marginBottom="-52dp"-->
+<!--        android:background="#FF0000" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/idbtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:layout_alignBottom="@+id/idedit"-->
+<!--        android:layout_toRightOf="@id/idedit"-->
+<!--        android:text="id" />-->
+
+    <Button
+        android:id="@+id/addRobot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="247dp"
+        android:text="添加机器人"
+        android:visibility="gone" />
+
+<!--    <EditText-->
+<!--        android:id="@+id/ipEdit"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_toRightOf="@id/setidbtn2"-->
+<!--        android:background="#FF0000"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/okip"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="ok"-->
+<!--        android:layout_toRightOf="@id/ipEdit"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/sererIpAddress"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/idtext"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="20dp"-->
+<!--        android:layout_toRightOf="@id/myHeadView"-->
+<!--        android:layout_alignTop="@+id/myHeadView"-->
+<!--        android:layout_marginBottom="3dp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/serverbtn"-->
+<!--        android:text="server"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/clientbtn"-->
+<!--        android:text="client"-->
+<!--        android:layout_toRightOf="@+id/serverbtn"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/setidbtn1"-->
+<!--        android:text="setId1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toRightOf="@id/clientbtn"-->
+<!--        />-->
+<!--    <Button-->
+<!--        android:id="@+id/setidbtn2"-->
+<!--        android:text="setId2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_toRightOf="@id/setidbtn1"-->
+<!--        />-->
+
+    <LinearLayout
+        android:id="@+id/buttonPanel1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:id="@+id/ibt_ready"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/ready_bt"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibt_leave"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/leave_d_bt"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/play"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="230dp"
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:id="@+id/ibt_pass"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pass_bt"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"/>
+        <ImageButton
+            android:id="@+id/ibt_play"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:background="@drawable/play_button"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <com.development.scut_cdd.View.MyShowingCardArea
+        android:id="@+id/ShownAreaLeft"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/leftHeadView"
+        android:layout_alignTop="@+id/leftHeadView"
+     />
+
+    <com.development.scut_cdd.View.MyShowingCardArea
+        android:id="@+id/ShownAreaTop"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/topHeadView"
+        android:layout_alignBottom="@+id/topHeadView"
+        android:layout_marginStart="-51dp"
+        android:layout_marginBottom="-79dp"/>
+
+    <com.development.scut_cdd.View.MyShowingCardArea
+        android:id="@+id/ShownAreaRight"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/rightHeadView"
+        android:layout_alignBottom="@+id/rightHeadView"
+        android:layout_marginStart="-183dp"
+        android:layout_marginBottom="-2dp" />
+
+    <com.development.scut_cdd.View.MyShowingCardArea
+        android:id="@+id/ShownAreaMy"
+        android:layout_width="170dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/ShownAreaLeft"
+        android:layout_marginStart="-183dp"
+        android:layout_marginBottom="-2dp" />
+
+    <com.development.scut_cdd.F_class.f_HeadView
+        android:id="@+id/leftHeadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.development.scut_cdd.F_class.f_HeadView
+        android:id="@+id/topHeadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.development.scut_cdd.F_class.f_HeadView
+        android:id="@+id/rightHeadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <com.development.scut_cdd.F_class.f_HeadView
+        android:id="@+id/myHeadView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <ImageView
+        android:id="@+id/pass_text_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/leftHeadView"
+        android:layout_alignTop="@id/leftHeadView"
+        android:src="@drawable/buchu_text"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/pass_text_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topHeadView"
+        android:layout_alignStart="@id/topHeadView"
+        android:src="@drawable/buchu_text"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/pass_text_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/rightHeadView"
+        android:layout_alignTop="@id/rightHeadView"
+        android:src="@drawable/buchu_text"
+        android:visibility="gone"/>
+    <ImageView
+        android:id="@+id/pass_text_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/buchu_text"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/ready_text_my"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ready_text"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/input_ip"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/beach_background" />
+
+    <View
+        android:id="@+id/input_ip_2"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/miwhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/input_ip"
+        android:layout_alignTop="@id/input_ip"
+        android:layout_alignBottom="@id/input_ip"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_alignRight="@id/input_ip"/>
+
+    <TextView
+        android:id="@+id/title_inputIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trapezoid_background"
+        android:autoSizeTextType="uniform"
+        android:text="热点连接"
+        android:gravity="center"
+        android:textColor="#D8860D"
+        android:layout_below="@id/input_ip"
+        android:layout_alignTop="@id/input_ip"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_marginLeft="95dp"/>
+
+    <ImageButton
+        android:id="@+id/closeInputIP"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/input_ip"
+        android:layout_alignRight="@+id/input_ip"
+        android:src="@drawable/exit_button"/>
+
+    <ImageButton
+        android:id="@+id/asServer"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:src="@drawable/server_button"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_marginLeft="50dp"
+        android:layout_alignTop="@id/input_ip"
+        android:layout_marginTop="80dp" />
+
+    <ImageButton
+        android:id="@+id/asClient"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:src="@drawable/client_button"
+        android:layout_alignLeft="@id/asServer"
+        android:layout_marginLeft="120dp"
+        android:layout_alignTop="@id/asServer" />
+
+    <TextView
+        android:id="@+id/askForIP"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="请输入主机ip地址"
+        android:gravity="center"
+        android:textColor="#D8860D"
+        android:autoSizeTextType="uniform"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_marginLeft="75dp"
+        android:layout_alignTop="@id/input_ip"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/prompt"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:text="ip :"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#D8860D"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_marginLeft="20dp"
+        android:layout_alignTop="@id/input_ip"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/acceptIP"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:autoSizeTextType="uniform"
+        android:layout_alignLeft="@id/prompt"
+        android:layout_marginLeft="65dp"
+        android:layout_alignTop="@+id/prompt"
+        android:layout_marginTop="-3dp"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/accept"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:src="@drawable/accept_button"
+        android:layout_alignLeft="@+id/acceptIP"
+        android:layout_marginLeft="25dp"
+        android:layout_alignTop="@+id/acceptIP"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/promptForStart"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:text="等待所有玩家连接后点击开始"
+        android:textColor="#D8860D"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_marginLeft="50dp"
+        android:layout_alignTop="@+id/input_ip"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/serverIP"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:autoSizeTextType="uniform"
+        android:text="主机IP"
+        android:layout_alignLeft="@id/input_ip"
+        android:layout_marginLeft="50dp"
+        android:layout_alignTop="@+id/input_ip"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+
+    <ImageButton
+        android:id="@+id/startForWlan"
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:src="@drawable/start_for_wlan"
+        android:layout_alignLeft="@id/serverIP"
+        android:layout_marginLeft="60dp"
+        android:layout_alignTop="@+id/serverIP"
+        android:layout_marginTop="50dp"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/headView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_head"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        tools:ignore="ExtraText" />
+    <ImageView
+        android:id="@+id/head_circle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/f_avatar_frame"
+        android:layout_alignTop="@id/view_head"
+        android:layout_alignLeft="@id/view_head"
+        android:layout_below="@id/view_head"
+        />
+
+    <ImageButton
+        android:id="@+id/mbtn_info"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@id/view_head"
+        android:layout_alignLeft="@id/view_head"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/f_shockingpanda"
+        android:layout_below="@id/view_head"/>
+
+    <TextView
+        android:id="@+id/tv_playerName"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/head_circle"
+        android:background="@drawable/f_miwhite"
+        android:layout_alignBottom="@id/view_head"
+        android:gravity="center"
+        android:textSize="8sp"
+        />
+</RelativeLayout>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/settlement_window"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.6"
+            android:background="@drawable/beach_background" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.6"
+            android:background="@drawable/miwhite"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:layout_alignBottom="@id/view1"
+            android:layout_alignLeft="@id/view1"
+            android:layout_alignRight="@id/view1" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/trapezoid_background"
+            android:text="积分结算"
+            android:gravity="center"
+            android:textColor="#D8860D"
+            android:layout_below="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:layout_alignLeft="@id/view1"
+            android:layout_marginLeft="134dp"/>
+
+        <TextView
+            android:id="@+id/nickName"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="昵称"
+            android:textColor="#D8860D"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/cardPoint"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="牌分"
+            android:textColor="#D8860D"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/scoreOfThisTurn"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="积分"
+            android:textColor="#D8860D"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/scoreOfAllTurn"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="总积分"
+            android:textColor="#D8860D"
+            android:autoSizeTextType="uniform"/>
+
+        <TextView
+            android:id="@+id/player1"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="玩家1"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player2"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="玩家2"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player3"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="玩家3"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player4"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="玩家4"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player1_cardPoint"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="牌分1"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player2_cardPoint"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="牌分2"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player3_cardPoint"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="牌分3"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player4_cardPoint"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="牌分4"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player1_score"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="积分1"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player2_score"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="积分2"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player3_score"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="积分3"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player4_score"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="210dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="积分4"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player1_AllScore"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="总积分1"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player2_AllScore"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:text="总积分2"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player3_AllScore"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="110dp"
+            android:gravity="center"
+            android:text="总积分3"
+            android:autoSizeTextType="uniform" />
+
+        <TextView
+            android:id="@+id/player4_AllScore"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="140dp"
+            android:gravity="center"
+            android:text="总积分4"
+            android:autoSizeTextType="uniform" />
+
+        <View
+            android:id="@+id/player1_background"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@drawable/winner_background"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="45dp"/>
+
+        <View
+            android:id="@+id/player2_background"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@drawable/winner_background"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="75dp"/>
+
+        <View
+            android:id="@+id/player3_background"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@drawable/winner_background"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="105dp"/>
+
+        <View
+            android:id="@+id/player4_background"
+            android:layout_width="320dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:background="@drawable/winner_background"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="135dp"/>
+
+
+        <ImageButton
+            android:id="@+id/nextGame"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:src="@drawable/next_game_button"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="170dp"/>
+
+        <ImageButton
+            android:id="@+id/exit"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:src="@drawable/exit_game_button"
+            android:layout_below="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_marginLeft="240dp"
+            android:layout_marginTop="170dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

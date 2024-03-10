@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="380dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:alpha="0.8"
+            android:background="@drawable/f_background_gradient"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本号：1.0.1"
+            android:layout_alignLeft="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:textSize="10sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/orange"
+            />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/f_miwhite"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:layout_alignBottom="@id/view1"
+            android:layout_alignLeft="@id/view1"
+            android:layout_alignRight="@id/view1" />
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f_trapezoid_background"
+            android:text="设置"
+            android:gravity="center"
+            android:textColor="#D8860D"
+            android:layout_below="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:layout_alignLeft="@id/view1"
+            android:layout_marginLeft="134dp"/>
+
+        <ImageButton
+            android:id="@+id/mbtn_exit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/view1"
+            android:layout_alignTop="@id/view1"
+            android:layout_alignRight="@id/view1"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/f_exit" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f_trapezoid_background"
+            android:text="背景音乐"
+            android:gravity="center"
+            android:textColor="#D8860D"
+            android:layout_below="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_alignLeft="@id/view1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/mbt_music"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/tv_2"
+            android:layout_alignTop="@id/tv_2"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/f_on"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f_trapezoid_background"
+            android:gravity="center"
+            android:textColor="#D8860D"
+            android:layout_below="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_alignLeft="@id/view1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:text="进阶人机"/>
+        <ImageButton
+            android:id="@+id/mbt_robot"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/tv_3"
+            android:layout_alignTop="@id/tv_3"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/f_on"
+            />
+        <TextView
+            android:id="@+id/tv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f_trapezoid_background"
+            android:text="游戏音效"
+            android:gravity="center"
+            android:textColor="#D8860D"
+            android:layout_below="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_alignLeft="@id/view1"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <ImageButton
+            android:id="@+id/mbt_beat"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/tv_4"
+            android:layout_alignTop="@id/tv_4"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="80dp"
+            android:background="@drawable/f_on"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/f_trapezoid_background"
+            android:gravity="center"
+            android:textColor="#D8860D"
+            android:layout_below="@id/view2"
+            android:layout_alignTop="@id/view2"
+            android:layout_alignLeft="@id/view1"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="50dp"
+            android:text="玩法介绍"/>
+        <ImageButton
+            android:id="@+id/mbt_playerRule"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@id/tv_5"
+            android:layout_alignTop="@id/tv_5"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/f_help"
+            />
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="90dp"
+            android:layout_alignTop="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_alignRight="@id/view2"
+            android:background="@color/orange"/>
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="牌桌"
+            android:gravity="center"
+            android:layout_alignTop="@id/view2"
+            android:layout_alignLeft="@id/view2"
+            android:layout_marginTop="78dp"
+            android:layout_marginLeft="156dp"
+            android:background="@drawable/f_miwhite"
+            android:textSize="15dp"
+            android:textColor="@color/orange" />
+
+        <ImageButton
+            android:id="@+id/changeBackground_1"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="@drawable/f_cardboard_bg1"
+            android:layout_alignTop="@id/line1"
+            android:layout_alignLeft="@id/view2"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageButton
+            android:id="@+id/changeBackground_2"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/f_cardboard_bg2"
+            android:layout_alignTop="@id/line1"
+            android:layout_alignRight="@id/view2"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="10dp"
+
+
+            />
+        <ImageButton
+            android:id="@+id/changeBackground_3"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/f_cardboard_bg3"
+            android:layout_alignTop="@id/line1"
+            android:layout_alignLeft="@id/view2"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="65dp"
+            />
+
+        <ImageButton
+            android:id="@+id/changeBackground_4"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/f_cardboard_bg4"
+            android:layout_alignTop="@id/line1"
+            android:layout_alignRight="@id/view2"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="65dp"
+            />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/bluetooth_background1"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:background="@drawable/beach_background" />
+
+    <View
+        android:id="@+id/bluetooth_background2"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="@drawable/miwhite"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/bluetooth_background1"
+        android:layout_alignTop="@id/bluetooth_background1"
+        android:layout_alignBottom="@id/bluetooth_background1"
+        android:layout_alignLeft="@id/bluetooth_background1"
+        android:layout_alignRight="@id/bluetooth_background1"/>
+
+    <TextView
+        android:id="@+id/title_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trapezoid_background"
+        android:autoSizeTextType="uniform"
+        android:text="蓝牙连接"
+        android:gravity="center"
+        android:textColor="#D8860D"
+        android:layout_below="@id/bluetooth_background1"
+        android:layout_alignTop="@id/bluetooth_background1"
+        android:layout_alignLeft="@id/bluetooth_background1"
+        android:layout_marginLeft="95dp"/>
+
+    <TextView
+        android:id="@+id/searching"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:text="搜索设备中"
+        android:gravity="center"
+        android:textColor="#D8860D"
+        android:layout_alignTop="@id/bluetooth_background1"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@id/bluetooth_background1"
+        android:layout_marginLeft="95dp"/>
+
+    <TextView
+        android:id="@+id/prompt_bluetooth"
+        android:layout_width="280dp"
+        android:layout_height="30dp"
+        android:autoSizeTextType="uniform"
+        android:text="由于机型蓝牙版本不同，可能无法连接"
+        android:gravity="center"
+        android:textColor="#D8860D"
+        android:layout_alignBottom="@id/bluetooth_background1"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@id/bluetooth_background1"
+        android:layout_marginLeft="10dp"/>
+
+    <ImageButton
+        android:id="@+id/closeBluetooth"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/bluetooth_background1"
+        android:layout_alignRight="@+id/bluetooth_background1"
+        android:src="@drawable/exit_button"/>
+
+    <ImageButton
+        android:id="@+id/refreshBluetooth"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/bluetooth_background2"
+        android:layout_alignRight="@+id/bluetooth_background1"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/refresh_button" />
+
+</RelativeLayout>
